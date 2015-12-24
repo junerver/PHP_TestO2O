@@ -1,0 +1,11 @@
+<layout name="layout"/>
+<div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>
+        <if condition="session('username')">
+            {:session('username')}的个人信息！
+            <else/>
+            您还没有登陆！
+        </if>
+    </strong>
+</div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="Public/head" title="{$title}"/>
+
+</head>
+<body>
+<include file="Public/navbar"/>
+
+<div class="container">
+    <div class="col-md-2 listgroup">
+        <!-- 对应两个操作方法 -->
+        <a href="{:U('Index/index')}" class="list-group-item">主页</a>
+        <a href="{:U('Index/profile')}" class="list-group-item">个人信息</a>
+        <a href="{:U('Index/register')}" class="list-group-item">注册</a>
+        <a href="{:U('Login/login')}" class="list-group-item">登陆</a>
+    </div>
+
+    <div class="col-md-10">
+        {__CONTENT__}
+    </div>
+</div>
+
+
+
+<include file="Public/js"/>
+</body>
+
+</html>
