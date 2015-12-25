@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a0fc06a-4161-4402-a1ab-37da5c741c52" name="Default" comment="增加了退出按钮">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/APP/15_12_24.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/APP/15_12_24.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/APP/2153b9159d058b319c88c26555a0e054.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/APP/2153b9159d058b319c88c26555a0e054.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/APP/3ec4d66b9ae61cdcb57bb7050b4021b3.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/APP/3ec4d66b9ae61cdcb57bb7050b4021b3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/APP/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/APP/Controller/IndexController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/APP/Controller/LoginController.class.php" afterPath="$PROJECT_DIR$/Application/APP/Controller/LoginController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/APP/a131cd6bf12a4788e2eebd522f97eb9d.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/APP/a131cd6bf12a4788e2eebd522f97eb9d.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/APP/View/layout.html" afterPath="$PROJECT_DIR$/Application/APP/View/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/APP/View/Login/login.html" afterPath="$PROJECT_DIR$/Application/APP/View/Login/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/APP/View/Index/profile.html" afterPath="$PROJECT_DIR$/Application/APP/View/Index/profile.html" />
+    <list default="true" id="6a0fc06a-4161-4402-a1ab-37da5c741c52" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
@@ -39,7 +30,7 @@
       <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/APP/Controller/IndexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47596154" vertical-offset="198" max-vertical-offset="1276">
+            <state vertical-scroll-proportion="0.2964072" vertical-offset="198" max-vertical-offset="1276">
               <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
               <folding />
             </state>
@@ -496,10 +487,16 @@
       <option name="project" value="LOCAL" />
       <updated>1450942549826</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="增加了退出按钮">
+      <created>1451030438155</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1451030438155</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -523,9 +520,10 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -538,7 +536,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -973,7 +970,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/APP/Controller/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47596154" vertical-offset="198" max-vertical-offset="1276">
+        <state vertical-scroll-proportion="0.2964072" vertical-offset="198" max-vertical-offset="1276">
           <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
           <folding />
         </state>
