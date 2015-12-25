@@ -28,8 +28,7 @@ class LoginController extends Controller
 
 	}
 
-	public function login()
-	{
+	public function login(){
 
 		$this->assign('title', '登陆');
 		$userModel = D('User');
@@ -44,29 +43,37 @@ class LoginController extends Controller
             //链式判断，使用elseif
             if ($result == null || empty($result)) {
                 //用户不存在
-                $error['username'] = '用户名不存在！';
-                $this->assign('errors', $error);
-                $this->display();
+              $error['username'] = '用户名不存在！';
+              $this->assign('errors', $error);
+              $this->display();
             } elseif ($result['password'] != $password) {
                 //密码不匹配
-                $error['password'] = '密码错误！';
-                $this->assign('errors', $error);
-                $this->display();
+              $error['password'] = '密码错误！';
+              $this->assign('errors', $error);
+              $this->display();
             }elseif (!check_verify($code)) {
-                $error['verify'] = '验证码错误！';
-                $this->assign('errors', $error);
-                $this->display();
+              $error['verify'] = '验证码错误！';
+              $this->assign('errors', $error);
+              $this->display();
             }else {
                 //均匹配
-                session('username', $username);
-                $this->success('登陆成功！', U('Index/index'), 2);
+              session('username', $username);
+              $this->success('登陆成功！', U('Index/index'), 2);
             }
-        } else {
+          } else {
             //无提交
-        	$this->display();
-        }
+           $this->display();
+         }
+       }
 
-        
+       public function signout()
+       {
+        //查看用户是否登陆
+        //已登录则登出
+        if(session('username')!=''){
+         session(null);
+         $this->success('退出成功', U('Index/index'), 2);
+       }
+     }
 
-    }
-}
+   }

@@ -16,9 +16,12 @@
     <div class="col-md-2 listgroup">
         <!-- 对应两个操作方法 -->
         <a href="<?php echo U('Index/index');?>" class="list-group-item">主页</a>
-        <a href="<?php echo U('Index/profile');?>" class="list-group-item">个人信息</a>
+        <?php if(session('username')): ?><a href="<?php echo U('Index/profile');?>" class="list-group-item">个人信息</a><?php endif; ?>
         <a href="<?php echo U('Index/register');?>" class="list-group-item">注册</a>
         <a href="<?php echo U('Login/login');?>" class="list-group-item">登陆</a>
+        <!-- 当用户已经登陆后才显示退出按钮 -->
+        <?php if(session('username')): ?><a href="<?php echo U('Login/signout');?>" class="list-group-item">退出</a><?php endif; ?>
+        
     </div>
 
     <div class="col-md-10">

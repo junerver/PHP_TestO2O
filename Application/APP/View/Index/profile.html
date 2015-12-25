@@ -1,11 +1,20 @@
 <layout name="layout"/>
-<div class="alert alert-success">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <strong>
-        <if condition="session('username')">
-            {:session('username')}的个人信息！
-            <else/>
-            您还没有登陆！
-        </if>
-    </strong>
-</div>
+
+
+<if condition="session('username')">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">{:session('username')}的个人信息！</h3>
+		</div>
+		<div class="panel-body">
+			Panel content
+		</div>
+	</div>
+	<else/>
+	<div class="alert alert-success">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<strong>
+			您还没有登陆！
+		</strong>
+	</div>
+</if>

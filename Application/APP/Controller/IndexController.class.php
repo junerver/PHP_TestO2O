@@ -17,15 +17,15 @@ class IndexController extends Controller
     {
         $this->assign('title', '个人信息');
         $user = session('username');  //从session中读取username
-        if ($user==null||empty($user)) {
-            //TODO
-
-        }
         $userModel = D('User');
-
-
-        $this->display();
-
+        if ($user!=null&&!empty($user)) {
+            //TODO
+            $result = $userModel->where(array('username' => $username))->find();
+            $this->assign('result',$result);
+            $this->display();
+        }else{
+            $this->display();
+        }    
     }
 
     public function register()
@@ -36,18 +36,12 @@ class IndexController extends Controller
             if ($userModel->create() && $userModel->add()) {
                 $this->success($userModel->username . '注册成功');
             } else {
-                // $users = $userModel->select();
-
-                // $this->assign('users', $users);
                 $this->assign('errors', $userModel->getError());
                 $this->assign('old', I('post.'));
                 $this->display();
+
             }
         } else {
-            // $users = $userModel->select();
-
-            // $this->assign('users', $users);
-
             $this->display();
         }
     }

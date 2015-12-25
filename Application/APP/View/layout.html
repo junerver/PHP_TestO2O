@@ -11,9 +11,12 @@
     <div class="col-md-2 listgroup">
         <!-- 对应两个操作方法 -->
         <a href="{:U('Index/index')}" class="list-group-item">主页</a>
-        <a href="{:U('Index/profile')}" class="list-group-item">个人信息</a>
+        <if condition="session('username')"><a href="{:U('Index/profile')}" class="list-group-item">个人信息</a></if>
         <a href="{:U('Index/register')}" class="list-group-item">注册</a>
         <a href="{:U('Login/login')}" class="list-group-item">登陆</a>
+        <!-- 当用户已经登陆后才显示退出按钮 -->
+        <if condition="session('username')"><a href="{:U('Login/signout')}" class="list-group-item">退出</a></if>
+        
     </div>
 
     <div class="col-md-10">

@@ -16,21 +16,33 @@
     <div class="col-md-2 listgroup">
         <!-- 对应两个操作方法 -->
         <a href="<?php echo U('Index/index');?>" class="list-group-item">主页</a>
-        <a href="<?php echo U('Index/profile');?>" class="list-group-item">个人信息</a>
+        <?php if(session('username')): ?><a href="<?php echo U('Index/profile');?>" class="list-group-item">个人信息</a><?php endif; ?>
         <a href="<?php echo U('Index/register');?>" class="list-group-item">注册</a>
         <a href="<?php echo U('Login/login');?>" class="list-group-item">登陆</a>
+        <!-- 当用户已经登陆后才显示退出按钮 -->
+        <?php if(session('username')): ?><a href="<?php echo U('Login/signout');?>" class="list-group-item">退出</a><?php endif; ?>
+        
     </div>
 
     <div class="col-md-10">
         
-<div class="alert alert-success">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <strong>
-        <?php if(session('username')): echo session('username');?>的个人信息！
-            <?php else: ?>
-            您还没有登陆！<?php endif; ?>
-    </strong>
-</div>
+
+
+<?php if(session('username')): ?><div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title"><?php echo session('username');?>的个人信息！</h3>
+		</div>
+		<div class="panel-body">
+			Panel content
+		</div>
+	</div>
+	<?php else: ?>
+	<div class="alert alert-success">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<strong>
+			您还没有登陆！
+		</strong>
+	</div><?php endif; ?>
     </div>
 </div>
 
