@@ -21,7 +21,8 @@ return array(
 //    'TMPL_DETECT_THEME'=>true,	// 自动侦测模板主题
 //    'THEME_LIST'=>'default,jike'	,	//设置模板的列表
     'TMPL_PARSE_STRING'=>array(
-        '__IMG__'=>'./Public/img'
+        '__IMG__'=>__ROOT__.'/Public/img',
+        '__EDITOR__'=>__ROOT__.'/Public/ueditor'
     )		,		//替换规则
 
     'READ_DATA_MAP'=>true,		//使用映射名作为字段名

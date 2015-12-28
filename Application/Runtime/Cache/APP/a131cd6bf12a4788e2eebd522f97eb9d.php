@@ -83,7 +83,29 @@
 
 
 
+
+
+
+        <link href="./Public/ueditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="./Public/ueditor/third-party/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="./Public/ueditor/umeditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="./Public/ueditor/umeditor.min.js"></script>
+<script type="text/javascript" src="./Public/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+
+<!--style给定宽度可以影响编辑器的最终宽度-->
+<script type="text/plain" id="myEditor" style="width:1000px;height:240px;">
+    <p>请在此输入~</p>
+</script>
+
+<script type="text/javascript">
+    //实例化编辑器
+    $(document).ready(function (){
+        var um = UM.getEditor('myEditor');
+    });
+</script>
     </div>
+
 </div>
 
 

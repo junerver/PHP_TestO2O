@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php echo ($title); ?></title>
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" type="text/css" href="/PHP_TestO2O/Public/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="/PHP_TestTP/Public/css/bootstrap.css" />
 
 </head>
 <body>
@@ -16,9 +16,12 @@
     <div class="col-md-2 listgroup">
         <!-- 对应两个操作方法 -->
         <a href="<?php echo U('Index/index');?>" class="list-group-item">主页</a>
-        <a href="<?php echo U('Index/profile');?>" class="list-group-item">个人信息</a>
+        <?php if(session('username')): ?><a href="<?php echo U('Index/profile');?>" class="list-group-item">个人信息</a><?php endif; ?>
         <a href="<?php echo U('Index/register');?>" class="list-group-item">注册</a>
         <a href="<?php echo U('Login/login');?>" class="list-group-item">登陆</a>
+        <!-- 当用户已经登陆后才显示退出按钮 -->
+        <?php if(session('username')): ?><a href="<?php echo U('Login/signout');?>" class="list-group-item">退出</a><?php endif; ?>
+        
     </div>
 
     <div class="col-md-10">
@@ -29,7 +32,7 @@
 		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 		<strong>欢迎注册！</strong> 
 	</div>
-	<form action="/PHP_TestO2O/Index/register.do" method="post" class="form-horizontal" role="form">
+	<form action="/PHP_TestTP/Index/register.do" method="post" class="form-horizontal" role="form">
 		<div class="form-group">
 			<legend>注册新用户！</legend>
 		</div>
@@ -73,15 +76,17 @@
 
 
 
+
     </div>
+
 </div>
 
 
 
- <script type="text/javascript" src="/PHP_TestO2O/Public/js/jquery.js"></script>
- <script type="text/javascript" src="/PHP_TestO2O/Public/js/bootstrap.min.js"></script>
- <script type="text/javascript" src="/PHP_TestO2O/Public/js/jquery.md5.js"></script>
- <script type="text/javascript" src="/PHP_TestO2O/Public/js/js.js"></script>
+ <script type="text/javascript" src="/PHP_TestTP/Public/js/jquery.js"></script>
+ <script type="text/javascript" src="/PHP_TestTP/Public/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="/PHP_TestTP/Public/js/jquery.md5.js"></script>
+ <script type="text/javascript" src="/PHP_TestTP/Public/js/js.js"></script>
 </body>
 
 </html>
